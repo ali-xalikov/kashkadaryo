@@ -13,7 +13,7 @@ export const uploadShopImage = async (file: File, shopId: number) => {
     .from("shop-images")
     .upload(fileName, file, {
       cacheControl: "3600",
-      upsert: true, // agar bor bo‘lsa — yangisiga almashtiradi
+      upsert: true,
       contentType: file.type || "image/jpeg",
     });
 
