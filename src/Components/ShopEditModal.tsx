@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { supabase } from "../lib/supabase";
 import districtsData from "../data/districts";
-import { Map, Placemark } from "@pbe/react-yandex-maps";
+import { Map, Placemark, YMaps } from "@pbe/react-yandex-maps";
 
 type Shop = {
   id: number;
