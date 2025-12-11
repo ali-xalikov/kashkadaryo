@@ -66,7 +66,10 @@ export const MainPage = () => {
   return (
     <div className="h-screen flex flex-col bg-gray-50 relative">
       <header className="bg-gradient-to-r from-indigo-700 to-purple-800 text-white p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-40">
-        <button onClick={() => setSidebarOpen(true)} className="text-3xl w-10 h-9">
+        <button
+          onClick={() => setSidebarOpen(true)}
+          className="text-3xl w-10 h-9"
+        >
           <img src={menu} alt="" />
         </button>
         <h1 className="text-2xl font-bold max-[385px]:opacity-0">
@@ -114,6 +117,7 @@ export const MainPage = () => {
       {modalShop && (
         <ShopModal
           shop={modalShop}
+          onUpdate={() => {}}
           onClose={() => setModalShop(null)}
           onDelete={() => setDeleteShop(modalShop)}
         />
