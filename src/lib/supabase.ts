@@ -1,8 +1,8 @@
 import { createClient } from "@supabase/supabase-js";
 
 export const supabase = createClient(
-  "https://uunkblczibcneidgughs.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1bmtibGN6aWJjbmVpZGd1Z2hzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ2ODg0NzUsImV4cCI6MjA4MDI2NDQ3NX0.4V-L0VVvxutGvYG6tPed_sdKdpxZqbDUT0nvBWubQrI"
+  "https://ptavozhlsokxbyemhhjq.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB0YXZvemhsc29reGJ5ZW1oaGpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ2ODg1MTYsImV4cCI6MjA4MDI2NDUxNn0.TXPEhXW3k3zxLPVCtYIX1xpjO_IGa3Ipeym07murAdY"
 );
 
 export const uploadShopImage = async (file: File, shopId: number) => {

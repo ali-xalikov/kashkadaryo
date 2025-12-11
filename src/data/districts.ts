@@ -3,7 +3,7 @@ export type District = {
   name: string;
   center: [number, number];
   boundary: [number, number][];
-};
+}; 
 
 export const districtsData: District[] = [
   {
@@ -175,3 +175,4 @@ export const districtsData: District[] = [
     ],
   },
 ];
+export default districtsData;

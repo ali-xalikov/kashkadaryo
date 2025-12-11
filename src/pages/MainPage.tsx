@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { supabase } from "../lib/supabase";
 import { Sidebar } from "../Components/Sidebar";
 import { MapComponent } from "../Components/Map";
-import { ShopModal } from "../Components/ShopModal";
+import ShopModal from "../Components/ShopModal";
 import { DeleteModal } from "../Components/DeleteModal";
 import { AddButton } from "../Components/AddButton";
 import { useNavigate } from "react-router";
