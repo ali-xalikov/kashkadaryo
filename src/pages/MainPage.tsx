@@ -6,7 +6,7 @@ import ShopModal from "../Components/ShopModal";
 import { DeleteModal } from "../Components/DeleteModal";
 import { AddButton } from "../Components/AddButton";
 import { useNavigate } from "react-router";
-import menu from '../assets/menu1.png'
+import menu from "../assets/menu1.png";
 
 export type Shop = {
   id: number;
@@ -15,7 +15,7 @@ export type Shop = {
   lng: number;
   price_per_kg: number;
   district_id: number;
-  image_url?: string | null; 
+  image_url?: string | null;
 };
 export const MainPage = () => {
   const [shops, setShops] = useState<Shop[]>([]);
@@ -23,9 +23,9 @@ export const MainPage = () => {
   const [modalShop, setModalShop] = useState<Shop | null>(null);
   const [deleteShop, setDeleteShop] = useState<Shop | null>(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
-    const [mapInstance, setMapInstance] = useState<any>(null);
-    
-    const navigate = useNavigate()
+  const [mapInstance, setMapInstance] = useState<any>(null);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     supabase
